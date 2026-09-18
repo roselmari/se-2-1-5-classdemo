@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Activity 2.1.5 Class Demo</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" 
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
-        crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="styles.css">
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
-    
+
 </head>
 
 <body class="body">
@@ -25,14 +25,119 @@
             <!--Navbar-->
             <nav class="navbar navbar-expand-lg nav-background-color" data-bs-theme="dark">
                 <div class="container">
-                    <a href="#" class="navbar-brand">
+                    <a href="#" class="navbar-brand"> <!--Website Brand-->
                         <img src="img/droplet.png" alt="Water Logo" class="d-inline-block align-text-top w-50">
                     </a>
+
+                    <!--Hamburger Menu Button-->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!--Collapsible navbar menu with custom hover underline CSS animation-->
+                    <div class="collapse navbar-collapse" id="navmenu"> <!--Links to Hamburger icon-->
+                        <ul class="navbar-nav ms-auto"> <!--ms-auto provides automatic margin spacing-->
+                            <li class="nav-itm">
+                                <a href="authors.html"
+                                    class="nav-link hover-underline-animation nav-menu-item">Authors</a>
+                            </li>
+                            <li class="nav-itm">
+                                <a href="procedure.html"
+                                    class="nav-link hover-underline-animation nav-menu-item">Procedure</a>
+                            </li>
+                            <li class="nav-itm">
+                                <a href="results.html"
+                                    class="nav-link hover-underline-animation nav-menu-item">Results</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
         </header>
+
+        <!--Showcase-->
+        <section class="showcase text-light p-2 text-center">
+            <div class="containter">
+                <div class="row">
+                    <div class="col-sm-6 p-0 d-flex align-items-center">
+                        <img src="img/img-5509.jpg" alt="Shark River" class="img-fluid">
+                        <!--img-fluid won't expand the image larger than the container, and will scale 
+                        appropriately if the browser gets narrower-->
+                    </div>
+                    <div class="col-sm-6 p-0 d-flex align-items-center">
+                        <div class="container">
+                            <h1 class="display-4">Water Temperatures Near Avon, NJ (2021-2022)</h1>
+                            <!--display-4 will make the <h1> stand out-->
+                            <h2>Building a Site with Bootstrap Demo</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="overview text-dark p-2 text-left"> <!--Overview-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 p-3">
+                        <img src="img/19418.jpeg" alt="Water Temperature Graph" class="img-fluid">
+                    </div>
+                    <div class="col-sm-8 p-3">
+                        <h1 class="overview-left-padding">Background</h1>
+                        <!--overview-left-ladding - custom padding left side-->
+                        <p class="lead overview-font overview-left-padding">Lorem ipsum dolor sit amet consectetur
+                            adipiscing elit dolore
+                            esse possimus quidem pariatur ullamco in autem dignissimos odio et qui
+                            dolorum et blanditiis aliquip quidem eligendi et eligendi at amet est
+                            nulla et enim praesentium anim eum ut omnis dolore commodo quidem
+                            laboris in cum magna sunt possimus id nulla.</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-8 p-3">
+                        <h1 class="">Rationale</h1> <!--overview-left-ladding - custom padding left side-->
+                        <p class="lead overview-font overview-right-padding">Lorem ipsum dolor sit amet consectetur
+                            adipiscing elit dolore
+                            esse possimus quidem pariatur ullamco in autem dignissimos odio et qui
+                            dolorum et blanditiis aliquip quidem eligendi et eligendi at amet est
+                            nulla et enim praesentium anim eum ut omnis dolore commodo quidem
+                            laboris in cum magna sunt possimus id nulla.</p>
+                    </div>
+                    <div class="col-sm-4 p-3">
+                        <img src="img/watermap.jpg" alt="Water Map" class="img-fluid">
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-4 p-3">
+                            <img src="img/phytoplankton-pnas.jpg" alt="Phytoplankton" class="img-fluid">
+                        </div>
+                        <div class="col-sm-8 p-3">
+                            <h1 class="overview-left-padding">Background</h1>
+                            <!--overview-left-ladding - custom padding left side-->
+                            <p class="lead overview-font overview-left-padding">Lorem ipsum dolor sit amet consectetur
+                                adipiscing elit dolore
+                                esse possimus quidem pariatur ullamco in autem dignissimos odio et qui
+                                dolorum et blanditiis aliquip quidem eligendi et eligendi at amet est
+                                nulla et enim praesentium anim eum ut omnis dolore commodo quidem
+                                laboris in cum magna sunt possimus id nulla.</p>
+                        </div>
+                    </div>
+                </div>
+            </div> <!--Contains all three rows-->
+        </section>
+
+        <!--Footer-->
+        <footer class="p-5 footer text-light text-center position-relative">
+            <div class="container">
+                <p class="lead">Coperright &copy; SE 2026 Bootstrap Demo</p>
+                <a href="#" class="position-absolute bottom-0 end-0 p-5">
+                    <i class="bi bi-arrow-up-circle h2 icon-white"></i>
+                </a>
+            </div>
+
+        </footer>
     </div>
 
 
-</body>\
+</body>
+
 </html>
